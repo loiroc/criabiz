@@ -1,0 +1,276 @@
+$color-primary: #161D38;
+$color-secondary: #B89F80;
+$color-dark: #0D0D2B;
+
+// Colors Ventures
+$c-ventures-primary: #BA1814;
+$c-ventures-sec: #ED3833;
+$c-ventures-terc: #9C211E;
+
+.c-v-p{
+    color: $c-ventures-primary !important;
+}
+.c-v-s{
+    color: $c-ventures-sec !important;
+}
+.c-v-t{
+    color: $c-ventures-terc !important;
+}
+
+.bg-v-p{
+    background-color: $c-ventures-primary !important;
+}
+.bg-v-s{
+    background-color: $c-ventures-sec !important;
+}
+.bg-v-t{
+    background-color: $c-ventures-terc !important;
+}
+
+// Colors Education
+$c-education-primary: #9F349E;
+$c-education-sec: #E153E0;
+
+.c-ed-p{
+    color: $c-education-primary !important;
+}
+.c-ed-s{
+    color: $c-education-sec !important;
+}
+
+.bg-ed-p{
+    background-color: $c-education-primary !important;
+}
+.bg-ed-s{
+    background-color: $c-education-sec !important;
+}
+
+// Colors Health
+$c-health-primary: #038874;
+$c-health-sec: #00BD9F;
+
+.c-he-p{
+    color: $c-health-primary !important;
+}
+.c-he-s{
+    color: $c-health-sec !important;
+}
+
+.bg-he-p{
+    background-color: $c-health-primary !important;
+}
+.bg-he-s{
+    background-color: $c-health-sec !important;
+}
+
+// Colors Impact
+$c-impact-primary: #CB0000;
+$c-impact-sec: #852000;
+$c-impact-ter: #B91E2E;
+$c-impact-q: #B53006;
+
+.c-imp-p{
+    color: $c-impact-primary !important;
+}
+
+.bg-imp-p{
+    background-color: $c-impact-primary !important;
+}
+
+.border-imp-p{
+    border-color: $c-impact-primary !important;
+}
+
+.c-imp-s{
+    color: $c-impact-sec !important;
+}
+
+.bg-imp-s{
+    background-color: $c-impact-sec !important;
+}
+
+.c-imp-t{
+    color: $c-impact-ter !important;
+}
+
+.bg-imp-t{
+    background-color: $c-impact-ter !important;
+}
+
+.bg-imp-q{
+    background-color: $c-impact-q !important;
+}
+
+// Colors Women
+$c-women-primary: #A43E79;
+$c-women-sec: #691546;
+
+.c-wom-p{
+    color: $c-women-primary !important;
+}
+
+.border-wom-p{
+    border-color: $c-women-primary !important;
+}
+
+.c-wom-s{
+    color: $c-women-sec !important;
+}
+
+.bg-wom-p{
+    background-color: $c-women-primary !important;
+}
+.bg-wom-s{
+    background-color: $c-women-sec !important;
+}
+
+// Colors Tech
+$c-tech-primary: #0074C5;
+$c-tech-sec: #00528C;
+
+.c-t-p{
+    color: $c-tech-primary !important;
+}
+
+.c-t-s{
+    color: $c-tech-sec !important;
+}
+
+.bg-t-p{
+    background-color: $c-tech-primary !important;
+}
+
+.border-t-p{
+    border-color: $c-tech-primary !important;
+}
+
+.bg-t-s{
+    background-color: $c-tech-sec !important;
+}
+
+// Colors Aging
+$c-aging-primary: #009DCC;
+$c-aging-sec: #006887;
+
+.c-ag-p{
+    color: $c-aging-primary !important;
+}
+
+.border-ag-p{
+    border-color: $c-aging-primary !important;
+}
+
+.c-ag-s{
+    color: $c-aging-sec !important;
+}
+
+.bg-ag-p{
+    background-color: $c-aging-primary !important;
+}
+
+.bg-ag-s{
+    background-color: $c-aging-sec !important;
+}
+
+// Colors Educa
+$c-educa-primary: #DAA402;
+$c-educa-sec: #FFBA00;
+
+.c-edu-p{
+    color: $c-educa-primary !important;
+}
+
+.c-edu-s{
+    color: $c-educa-sec !important;
+}
+
+.bg-edu-p{
+    background-color: $c-educa-primary !important;
+}
+
+.bg-edu-s{
+    background-color: $c-educa-sec !important;
+}
+
+// Colors Youth
+$c-youth-primary: #D97E00;
+$c-youth-sec: #995A03;
+
+.c-yo-p{
+    color: $c-youth-primary !important;
+}
+
+.c-yo-s{
+    color: $c-youth-sec !important;
+}
+
+.bg-yo-p{
+    background-color: $c-youth-primary !important;
+}
+
+.bg-yo-s{
+    background-color: $c-youth-sec !important;
+}
+
+// Colors Agritech
+$c-agritech-primary: #8F3F1B;
+$c-agritech-sec: #842C05;
+$c-agritech-ter: #D55600;
+
+.c-agr-p{
+    color: $c-agritech-primary !important;
+}
+
+.c-agr-s{
+    color: $c-agritech-sec !important;
+}
+.c-agr-ter{
+    color: $c-agritech-ter !important;
+}
+
+.bg-agr-p{
+    background-color: $c-agritech-primary !important;
+}
+
+.bg-agr-s{
+    background-color: $c-agritech-sec !important;
+}
+.bg-agr-ter{
+    background-color: $c-agritech-ter !important;
+}
+
+// Colors Angels
+$c-angels-primary: #E5AC00;
+$c-angels-sec: #FFBA00;
+
+.c-ang-p{
+    color: $c-angels-primary !important;
+}
+
+.c-ang-s{
+    color: $c-angels-sec !important;
+}
+
+.bg-ang-p{
+    background-color: $c-angels-primary !important;
+}
+
+.border-ang-p{
+    border-color: $c-angels-primary !important;
+}
+
+.bg-ang-s{
+    background-color: $c-angels-sec !important;
+}
+
+
+// Misc
+$c-fintech: #00B3B6;
+
+.c-f-p{
+    color: $c-fintech !important;
+}
+
+.bg-f-p{
+    background-color: $c-fintech !important;
+}

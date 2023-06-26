@@ -1,0 +1,80 @@
+.programas-impacto{
+    padding-top: 55px;
+
+    @media screen and (max-width: $bp-LG){
+        padding-top: 25px;
+    }
+
+    @media screen and (max-width: $bp-SM){
+        padding-top: 15px;
+    }
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        @include scale(0.8);
+        padding-top: 0;
+        margin-top: -50px;
+    }
+
+    .sub-header{
+        padding-bottom: 50px;
+
+        @media screen and (max-width: $bp-LG){
+            padding-bottom: 15px;
+        }
+
+        .line{
+            @media screen and (min-width: $bp-XL){
+                width: 58%;
+            }
+        }
+    }
+
+    &__item{
+        background-color: #fff;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 2px 5px 10px rgba(0,0,0,.2);
+        height: 150px;
+        padding: 20px 20px;
+        @include transition();
+
+        @media screen and (max-width: $bp-LG){
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px 15px;
+            height: 90px;
+            margin-bottom: 15px;
+        }
+
+        &:hover{
+            @include scale(1.05);
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+        }
+
+        &.v-light{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            box-shadow: none;
+            background: none;
+            padding: 0;
+            height: unset;
+
+            img{
+                height: 190px;
+                width: unset;
+
+                @media screen and (max-width: $bp-MD){
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

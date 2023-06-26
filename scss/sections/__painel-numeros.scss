@@ -1,0 +1,347 @@
+.painel-numeros {
+    padding-top: 90px;
+
+    @media screen and (min-width: $bp-LG) {
+        padding-left: 240px;
+        padding-right: 240px;
+    }
+
+    @media screen and (max-width: $bp-LG) {
+        padding-top: 70px;
+        padding-bottom: 00px;
+    }
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1439px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    @media screen and (min-width: 760px) and (max-width: 800px) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    @media screen and (max-width: $bp-SM){
+        padding-top: 55px;
+    }
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        @include scale(0.8);
+        padding-top: 0;
+        margin-top: -50px;
+    }
+
+    &__content {
+        border-radius: 16px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        background-color: $c-ventures-terc;
+        
+        @media screen and (max-width: $bp-LG) {
+            margin-top: 30px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.34);
+        }
+
+        .header {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            padding: 13px 0;
+            border-bottom: 1.5px solid rgba(255, 255, 255, 0.432);
+
+            .toggle-btn {
+                position: absolute;
+                right: 45px;
+                top: 17px;
+                color: #fff;
+                background-color: none;
+                background: none;
+                font-size: 20px;
+                border: none;
+                @include transition();
+
+                @media screen and (min-width: $bp-LG){
+                    display: none;
+                }
+
+                &:hover{
+                    outline: none;
+                    @include scale(1.05);
+                }
+
+                &:focus{
+                    outline: none;
+                }
+                
+                &:active{
+                    outline: none;
+                }
+
+                .right{
+                    display: block;
+                }
+
+                .left{
+                    display: none;
+                }
+
+                .right, .left{
+                    animation: fadeIn 0.4s;
+                }
+
+                &.active{
+                    .right{
+                        display: none;
+                    }
+
+                    .left{
+                        display: block;
+                    }
+                }
+                
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                justify-content: flex-start;
+                padding: 16px 20px 16px 40px;
+            }
+
+            .title {
+                font-size: 28px;
+                font-weight: 700;
+                margin-bottom: 5px;
+
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 20px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .info {
+            display: flex;
+
+            .column {
+                width: 50%;
+                &:nth-child(2) {
+                    border-left: 1.5px solid rgba(255, 255, 255, 0.46);
+
+                    .content {
+                        padding-left: 20px;
+                    }
+                }
+                @media screen and (max-width: $bp-LG) {
+                    width: 100%;
+                    display: none;
+
+                    &[data-visible="true"] {
+                        display: block;
+                        animation: fadeIn 0.5s;
+                    }
+                }
+            }
+
+        }
+
+        .subheader {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1.5px solid rgba(255, 255, 255, 0.46);
+            
+            @media screen and (max-width: $bp-LG) {
+                justify-content: flex-start;
+                padding-left: 40px;
+
+                .subtitle {
+                    font-size: 18px;
+                }
+            }
+
+            .subtitle {
+                font-size: 25px;
+                font-weight: 700;
+            }
+        }
+
+        .content {
+            padding-left: 60px;
+            padding-top: 25px;
+            padding-bottom: 15px;
+
+            @media screen and (max-width: $bp-MD){
+                padding-left: 30px;
+                padding-bottom: 29px;
+            }
+
+            .group {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 15px;
+
+                @media screen and (max-width: $bp-MD){
+                    margin-bottom: 25px;
+                }
+
+                .financial-number {
+                    display: flex;
+                    justify-content: center;
+                    min-width: 310px;
+                    font-size: 18px;
+                    border-radius: 22px;
+                    padding: 6px 35px;
+                    color: $c-ventures-sec;
+                    background-color: #fff;
+
+                    @media screen and (min-width: $bp-LG) and (max-width: 1100px){
+                        font-size: 20px;
+                        min-width: 300px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 14px;
+                        min-width: 220px;
+                    }
+                }
+
+                .sub-desc {
+                    margin-top: 5px;
+                    font-size: 16px;
+                    margin-left: 10px;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .sub-group {
+                display: flex;
+                align-items: center;
+                margin-bottom: 25px;
+
+                @media screen and (max-width: $bp-MD){
+                    margin-bottom: 15px;
+                }
+
+                .financial-number {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 17px;
+                    min-width: 220px;
+                    border-radius: 22px;
+                    padding: 8px 0;
+                    color: $c-ventures-primary;
+                    background-color: #fff;
+
+                    @media screen and (min-width: $bp-LG) and (max-width: 1100px){
+                        font-size: 20px;
+                        min-width: 240px;
+                    }
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 11px;
+                        min-width: 150px;
+                    }
+
+                    @media screen and (min-width: 760px) and (max-width: 800px) {
+                        max-width: 250px;
+                    }
+                }
+
+                .sub-desc {
+                    font-size: 14px;
+                    margin-left: 16px;
+                    margin-bottom: 10px;
+
+                    @media screen and (max-width: $bp-MD){
+                        font-size: 10px;
+                        padding-right: 20px;
+                        margin-bottom: 0;
+                    }
+
+                    @media screen and (min-width: $bp-LG) and (max-width: 1100px){
+                        font-size: 15px;
+                        padding-right: 5px;
+                    }
+
+                    &.has-mw {
+                        max-width: 180px;
+
+                        @media screen and (max-width: $bp-MD){
+                            padding-right: 50px;
+                        }
+                    }
+                }
+            }
+
+            .sub-desc {
+                font-size: 16px;
+                margin-top: 5px;
+                font-weight: 300;
+                padding-left: 3px;
+            }
+        }
+    }
+
+    &__footer {
+        background-color: #fff;
+        border-radius: 0 0 16px 16px;
+        padding-top: 25px;
+        padding-bottom: 30px;
+
+        @media screen and (max-width: $bp-MD){
+            padding-bottom: 30px;   
+        }
+
+        .title {
+            font-size: 25px;
+            color: $c-ventures-primary;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 35px;
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 15px;
+                max-width: 250px;
+                margin: 0 auto;
+                margin-bottom: 25px;
+            }
+        }
+
+        .brands {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (max-width: $bp-SM){
+                flex-wrap: wrap;
+            }
+
+            img {
+                height: 70px;
+                margin: 0 20px;
+                @include transition();
+
+                &:hover {
+                    @include scale(1.02);
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    height: 30px;
+                    margin: 0 10px;
+                }
+
+                @media screen and (max-width: $bp-SM){
+                    height: 35px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

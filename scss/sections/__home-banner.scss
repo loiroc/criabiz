@@ -1,0 +1,320 @@
+.home-banner {
+    background-color: $c-ventures-primary;
+    background-image: url("../images/bg//home-bg-grads.png");
+    background-size: 85%;
+    background-position: 0px 160px;
+    background-repeat: no-repeat;
+    padding-top: 194px;
+    padding-bottom: 120px;
+    
+    &.v-2{
+        background-image: url("../images/bg/home-bg-grads-2.png");
+        background-size: 100%;
+        background-position: -50px 250px;
+
+        @media screen and (min-width: $bp-XL){
+            padding-bottom: 120px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            padding-top: 155px;
+            padding-bottom: 65px;
+            background-position: -50px 320px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            background-size: 140%;
+            padding-bottom: 70px;
+            background-position: 80% 345px;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-top: 140px;
+            padding-bottom: 55px;
+        }
+    }
+    &.v-3{
+        background-image: url("../images/bg/home-bg-grads-2.png");
+        background-size: 100%;
+        background-position: -50px 250px;
+
+        @media screen and (min-width: $bp-LG){
+            padding-top: 185px;
+            padding-bottom: 95px;
+        }
+        @media screen and (max-width: $bp-LG){
+            padding-top: 145px;
+            padding-bottom: 60px;
+            background-position: -50px 340px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            background-size: 140%;
+            background-position: 80% 325px;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-bottom: 20px;
+            padding-top: 125px;
+
+            .title{
+                font-size: 42px;
+            }
+        }
+    }
+
+    
+    &.v-4{
+        background-image: url("../images/bg/home-bg-grads-2.png");
+        background-size: 100%;
+        background-position: -50px 280px;
+
+        @media screen and (min-width: $bp-LG){
+            padding-top: 145px;
+            padding-bottom: 60px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            padding-top: 145px;
+            background-size: 140%;
+            background-position: 80% 195px;
+            padding-bottom: 55px;
+        }
+
+        
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-top: 130px;
+            background-position: 80% 50px;
+            padding-bottom: 20px;
+        }
+
+    }
+
+    &.v-5{
+        background-image: url("../images/bg/home-bg-grads-2.png");
+        background-size: 100%;
+        background-position: -50px 450px;
+
+        @media screen and (min-width: $bp-LG){
+            padding-top: 270px;
+            padding-bottom: 130px;
+        }
+
+        @media screen and (max-width: $bp-SM){
+            background-size: 140%;
+            background-position: 80% 275px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            padding-top: 145px;
+            background-size: 140%;
+            background-position: 80% 275px;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            padding-top: 140px;
+            padding-bottom: 60px;
+            background-position: 80% 50px;
+        }
+
+    }
+
+    @media screen and (max-width: $bp-XL){
+        background-position: 0px 260px;
+    }
+    
+
+    @media screen and (max-width: $bp-LG){
+        padding-top: 125px;
+        padding-bottom: 186px;
+        background-size: 120%;
+        background-position: 160% 585px;
+    }
+    
+    @media screen and (max-width: $bp-MD){
+        padding-bottom: 30px;
+        background-position: 160% 500px;
+    }
+    
+    @media screen and (max-width: $bp-SM){
+        padding-bottom: 50px;
+        background-size: 170%;
+        background-position: 70% 465px;
+    }
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        padding-top: 170px;
+        padding-bottom: 40px;
+    }
+    
+    &__caption {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
+        }
+
+        .header {
+            display: flex;
+            font-size: 15px;
+            align-items: center;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            .content-1 {
+                display: inline-block;
+                background-color: #fff;
+                border-radius: 32px;
+                color: $color-dark;
+                font-weight: 500;
+                padding: 4px 16px;
+                text-transform: uppercase;
+            }
+
+            .content-2 {
+                background-color: rgba(255, 255, 255, 0.13);
+                padding: 9px 20px 9px 120px;
+                border-radius: 32px;
+                margin-left: -103px;
+            }
+
+            .content-2 {
+                display: inline-block;
+            }
+        }
+
+        .title{
+            font-weight: bold;
+            font-size: 50px;
+            padding-right: 30px;
+
+            @media screen and (max-width: 1367px){
+                font-size: 47px;
+            }
+
+            @media screen and (max-width: $bp-XL){
+                font-size: 45px;
+                padding-right: 0;
+                max-width: 550px;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 30px;
+                max-width: 400px;
+            }
+
+            @media screen and (max-width: 330px){
+                font-size: 26px;
+            }
+
+            &.v5{
+                @media screen and (min-width: $bp-LG){
+                    font-size: 51px;
+                }
+                @media screen and (min-width: $bp-XL){
+                    font-size: 62px;
+                }
+            }
+        }
+
+        .desc{
+            font-weight: 400;
+            opacity: .9;
+            font-size: 15.5px;
+            line-height: 1.8;
+            max-width: 435px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: $bp-LG){
+                font-size: 14px;
+                max-width: 285px;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+
+            @media screen and (max-width: 330px){
+                font-size: 12px;
+                max-width: 248px;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+        }
+
+        .more{
+            display: flex;
+            align-items: center;
+            background-color: $c-ventures-sec;
+            font-size: 17px;
+            padding: 10px 14px 10px 20px;
+            font-weight: 500;
+            color: #fff;
+            border-radius: 32px;
+            @include transition();
+            
+            @media screen and (max-width: $bp-LG){
+                font-size: 15px;
+                padding: 12px 13px 12px 23px;
+                margin-top: 3px;
+            }
+
+            &:hover{
+                padding-right: 35px;
+                // @include scale(1.02);
+
+               .circle{
+                  transform: translateX(15px);
+               }
+            }
+
+            .circle{
+                display: flex;
+                font-size: 12px;
+                justify-content: center;
+                align-items: center;
+                background-color: #fff;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                color: $c-ventures-sec;
+                border-radius: 32px;
+                margin-left: 20px;
+                @include transition();
+
+                @media screen and (max-width: $bp-LG){
+                    width: 25px;
+                    height: 25px;
+                }
+
+                i{
+                    margin-left: 2px;
+                }
+            }
+        }
+    }
+
+    &__banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        @media screen and (max-width: $bp-LG){
+            display: none;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.8);
+        }
+
+        img {
+            width: 63.2%;
+        }
+    }
+}

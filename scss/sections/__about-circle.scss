@@ -1,0 +1,156 @@
+.about-circle {
+    padding-top: 80px;
+
+    @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+        @include scale(0.8);
+        padding-top: 0;
+    }
+    
+    @media screen and (max-width: $bp-LG) {
+        padding-top: 50px;
+    }
+
+    .bg-grad {
+        width: 60%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__caption {
+        .title {
+            color: $c-ventures-sec;
+            font-weight: 700;
+            margin-bottom: -5px;
+            @media screen and (max-width: $bp-LG) {
+                font-size: 22px;
+                width: 90%;
+                margin: 0 auto;
+                text-align: left;
+                color: $c-impact-primary;
+                margin-bottom: -5px;
+            }
+        }
+
+        hr {
+            background-color: $c-ventures-sec;
+            height: 4.5px;
+            width: 800px;
+            border: none;
+            margin: none none 15px;
+            
+            @media screen and (max-width: $bp-LG) {
+                width: 90%;
+                background-color: $c-ventures-sec;
+                margin-bottom: 15px;
+            }
+
+            @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+                width: 650px;
+            }
+        }
+
+        .desc {
+            font-size: 16px;
+            color: $color-dark;
+            line-height: 1.92;
+            padding-top: 5px;
+
+            @media screen and (max-width: $bp-LG) {
+                padding-top: 10px;
+                font-size: 17px;
+                line-height: 1.5;
+                padding-top: 20px;
+                max-width: 600px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                font-size: 14px;
+                padding-top: 10px;
+                max-width: 460px;
+                line-height: 1.5;
+            }
+
+            &.lg{
+                font-size: 22px;
+
+                @media screen and (max-width: $bp-LG){
+                    font-size: 20px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                    font-size: 18px;
+                }
+            }
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 35px;
+            padding: 9px 0;
+            width: 100%;
+            color: #fff !important;
+            font-weight: 500;
+            font-size: 19px;
+            margin-bottom: 15px;
+            box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.2);
+            @include transition();
+
+            &:hover {
+                @include scale(1.03);
+            }
+
+            @media screen and (max-width: $bp-XL){
+                font-size: 18.5px;
+            }
+
+            @media screen and (max-width: $bp-LG) {
+                font-size: 15px;
+                padding: 12px 0;
+            }
+
+            @media screen and (max-width: $bp-MD){
+                font-size: 13px;
+                padding: 9px 0;
+                margin-bottom: 15px;
+            }
+
+            .icon {
+                font-size: 18px;
+                margin-right: 15px;
+
+                @media screen and (max-width: $bp-LG) {
+                    font-size: 12px;
+                    margin-right: 10px;
+                }
+
+                @media screen and (max-width: $bp-MD){
+                   font-size: 10px;
+                }
+            }
+
+            &.red {
+                background-color: $c-ventures-sec;
+            }
+            &.blue {
+                background-color: $c-fintech;
+            }
+            &.yellow {
+                background-color: $c-angels-sec;
+            }
+        }
+    }
+
+    &__banner {
+        img {
+            width: 105%;
+
+            @media screen and (max-width: $bp-LG) {
+                width: 107vw;
+                margin-left: -14vw;
+            }
+
+        }
+    }
+}

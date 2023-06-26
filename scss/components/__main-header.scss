@@ -1,0 +1,220 @@
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    box-shadow: 0 6px 4px rgba(0,0,0,.17);
+    background-color: #fff;
+    z-index: 12;
+    @include transition();
+
+    @media (min-width: 1400px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl,
+        .container-xxl {
+            max-width: 1200px;
+        }
+    }
+
+    @media screen and (max-width: $bp-LG) {
+        padding-top: 15px;
+        padding-bottom: 10px;
+        box-shadow: 0 6px 4px rgba(0,0,0,.15);
+    }
+
+    &.sticky {
+        padding-top: 8px;
+        padding-bottom: 6px;
+        opacity: 1;
+        box-shadow: 0 6px 4px rgba(0,0,0,.04);
+
+        .brand {
+            width: 76px;
+
+            @media screen and (max-width: $bp-LG){
+                width: 60px;
+            }
+            
+            &.horizontal{
+                width: 140px;
+
+                @media screen and (max-width: $bp-LG){
+                    width: 105px;
+                }
+            }
+        }
+
+        .main-header__toggler{
+            font-size: 20px;
+        }
+        
+        .main-nav:not([data-visible="true"]) {
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+
+                        @media screen and (max-width: $bp-LG){
+                            font-size: 11px;
+                        }
+
+                        @media screen and (max-width: $bp-SM){
+                            font-size: 9px;
+                        }
+                        
+                        @media screen and (max-width: 330px){
+                            font-size: 9px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        @media screen and (max-width: $bp-LG) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (min-width: $bp-LG) and (max-width: 1368px){
+            @include scale(0.9);
+        }
+
+        .brand {
+            width: 96px;
+            @include transition();
+
+            @media screen and (max-width: $bp-LG) {
+                width: 95px;
+            }
+
+            @media screen and (max-width: $bp-MD) {
+                width: 75px;
+            }
+            @media screen and (max-width: 320px) {
+                width: 72px;
+            }
+
+            &:hover {
+                @include scale(1.02);
+            }
+
+            &.horizontal{
+                width: 150px;
+
+                @media screen and (max-width: $bp-LG) {
+                    width: 145px;
+                }
+    
+                @media screen and (max-width: $bp-MD) {
+                    width: 140px;
+                    margin-left: -10px;
+                }
+                @media screen and (max-width: 320px) {
+                    width: 95px;
+                }
+            }
+        }
+
+        .main-nav {
+            display: flex;
+
+            @media screen and (max-width: $bp-LG){
+                width: 100vw;
+                height: 100vh;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.6s ease-in-out;
+                height: 0;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                &[data-visible="true"]{
+                    opacity: 1;
+                    pointer-events: all;
+                    height: 100vh;
+                }
+            }
+
+            ul {
+                display: flex;
+                padding-top: 5px;
+
+                @media screen and (max-width: $bp-LG){
+                    flex-direction: column;
+                    padding-bottom: 67.5%;
+                }
+
+                li {
+                    &:not(:last-child) {
+                        margin-right: 30px;
+                        
+                        @media screen and (max-width: $bp-LG) {
+                            margin-right: 0;
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                    a {
+                        display: block;
+                        font-size: 19px;
+                        color: $c-ventures-primary;
+                        transition: all 0.4s;
+
+                        @media screen and (max-width: $bp-LG) {
+                            font-size: 22px;
+                            text-align: center;
+                            font-weight: 500;
+                        }
+                        
+                        &.active{
+                            color: $c-ventures-sec;
+                            text-shadow: .6px .6px 1px $c-ventures-sec;
+                            @include scale(1.05);
+                        }
+                        &:hover{
+                            color: $c-ventures-sec;
+                            @include scale(1.04);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brand-group{
+        @media screen and (max-width: $bp-LG){
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+        }
+    }
+
+
+    &__toggler{
+        display: none;
+        background: none !important;
+        border: none !important;
+        font-size: 24px;
+        color: $c-ventures-primary;
+        margin-top: 4px;
+        margin-right: -5px;
+        @include transition();
+
+        @media screen and (max-width: $bp-LG){
+            display: block;
+        }
+    }
+}

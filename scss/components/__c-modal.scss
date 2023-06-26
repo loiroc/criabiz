@@ -1,0 +1,102 @@
+.c-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    bottom: 0;
+    width: 70vw;
+    height: 86vh;
+    background-color: #fff;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 14;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0,0,0,.05);
+    transition: all 0.8s;
+
+    @media screen and (max-width: $bp-LG) {
+        overflow-y: scroll;
+        width: 100vw;
+        border-radius: 0;
+        height: 100vh;
+        padding-bottom: 30px;
+    }
+
+    &[data-visible="true"] {
+        opacity: 1;
+        pointer-events: all;
+        transform: translate(-50%, -50%);
+    }
+
+    &__overlay{
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.137);
+        width: 100vw;
+        height: 100vh;
+        z-index: 13;
+        opacity: 0;
+        pointer-events: none;
+        @include transition();
+
+        &[data-visible="true"] {
+            opacity: 1;
+            pointer-events: all;
+            pointer-events: all;
+            @include scale(1);
+        }
+    }
+
+    .close {
+        position: absolute;
+        z-index: 4;
+        right: 24px;
+        top: 22px;
+        height: 22px;
+        color: $c-angels-primary;
+        width: 42px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        opacity: 1 !important;
+        transition: all 0.4s;
+        outline: none !important;
+        border: none !important;
+        box-shadow: none !important;
+
+        @media screen and (max-width: $bp-LG) {
+            height: 30px;
+            width: 30px;
+            right: 21px;
+            top: 24px;
+        }
+        &:hover {
+            @include scale(1.3);
+        }
+    }
+
+    .content {
+        height: 100%;
+        overflow: auto;
+        padding-bottom: 60px;
+
+        @media screen and (max-width: $bp-LG) {
+            padding-left: 0;
+            height: auto;
+        }
+
+        .subtitle{
+            @media screen and (min-width: $bp-LG){
+                margin-bottom: 35px;
+                margin-top: -15px;
+            }
+        }
+
+        .line{
+            @media screen and (min-width: $bp-LG){
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

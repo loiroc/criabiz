@@ -1,0 +1,62 @@
+
+.send-btn {
+    background-color: $c-ventures-sec;
+    font-weight: 800;
+    font-size: 28px;
+    border-radius: 9px;
+    padding: 4px 115px;
+    margin: 0 auto;
+    color: #fff;
+    border: none !important;
+    @include transition();
+
+    &:disabled{
+        opacity: .5;
+        pointer-events: none;
+    }
+
+    &.md{
+        font-size: 24px;
+        width: 100%;
+        padding: 6px 0;
+        display: flex;
+        justify-content: center;
+
+        @media screen and (max-width: 1380px){
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: $bp-LG){
+            text-align: center;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+        
+        @media screen and (max-width: 415px){
+            text-align: center;
+            font-size: 13px;
+            border-radius: 6px;
+        }
+    }
+
+    @media screen and (max-width: $bp-LG) {
+        font-size: 14px;
+        border-radius: 15px;
+        padding: 12px 40px;
+    }
+
+    i {
+        font-size: 22px;
+        margin-left: 12px;
+
+        @media screen and (max-width: $bp-LG) {
+            font-size: 13px;
+            margin-left: 9px;
+        }
+    }
+
+    &:hover {
+        color: #fff;
+        @include scale(1.05);
+    }
+}
